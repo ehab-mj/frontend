@@ -1,0 +1,75 @@
+section {
+    min-height: 30vh;
+    padding: 11rem 9% 2rem;
+}
+
+.A-about {
+    position: relative;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: var(--bgcolor);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+    transform: translate(0, 0);
+    transition: all .15s ease;
+    z-index: 10;
+}
+
+.A-span {
+    color: var(--Red);
+}
+
+.A-about .A-Context img {
+    height: auto;
+    width: 300px;
+    max-width: 100%;
+}
+
+.A-Context {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.A-text h1 {
+    color: var(--second);
+    font-size: 75px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+.A-text p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.A-text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .A-about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}

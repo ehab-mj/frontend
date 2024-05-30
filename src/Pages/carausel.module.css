@@ -1,0 +1,88 @@
+#ProductPageUdit {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#productListGrpUdit {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 5px;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.link:hover {
+    color: rgb(173, 172, 172);
+}
+
+#carausel {
+    display: grid;
+    grid-template-columns: 2fr .5fr;
+    gap: 20px;
+    color: #fff;
+    padding: 30px;
+
+}
+
+.cardTitle {
+    font-size: 14px;
+    text-align: left;
+}
+
+
+#carausel>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#carausel>div:nth-child(2)>div {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#carausel>div:nth-child(2)>div:hover {
+    background-color: gray;
+}
+
+@media(max-width:992px) {
+    #ProductPageUdit {
+        width: 80%;
+    }
+
+    #carausel {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: #fff;
+        padding: 5px;
+    }
+
+    #carausel>div:nth-child(2) {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media(max-width:786px) {
+    #ProductPageUdit {
+        width: 100%;
+    }
+}

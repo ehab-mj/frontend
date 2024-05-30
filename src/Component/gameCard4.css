@@ -1,0 +1,22 @@
+.gameCard .popup-overlay {
+    position: absolute;
+    z-index: 1000;
+    border: #ffffff;
+    border-radius: 50%;
+}
+
+.gameCard iframe {
+    position: absolute;
+    width: 335px;
+    height: 220px;
+    z-index: 500;
+}
+
+@media (max-width: 691px) {
+    .gameCard iframe {
+        position: absolute;
+        width: 82vw;
+        height: 220px;
+        z-index: 500;
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.font {
+    font-family: 'Amita', sans-serif;
+    font-weight: 700;
+}
+
+.hover {
+    img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.SearchStyle {
+    width: "50vw";
+}
+
+.SearchStyle:hover {}
+
+/* .HomePic {
+    display: "flex";
+    justify-content: center;
+    align-items: "center";
+    flex-direction: "coulmn";
+} */
+.mobilePic img {
+    width: 35vw;
+}
+
+@media (max-width: 1650px) {
+    .mobilePic {
+        flex-direction: column-reverse;
+    }
+
+    .mobilePic img {
+        width: 45vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .mobilePic {
+        flex-direction: column-reverse;
+    }
+
+    .mobilePic img {
+        width: 60vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobilePic {
+        flex-direction: column-reverse;
+    }
+
+    .mobilePic img {
+        width: 70vw;
+        margin-top: 4rem;
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .mobilePic img {
+        width: 90vw;
+        margin-right: 18rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .mobilePic img {
+        width: 90vw;
+        margin-right: 21rem;
+    }
+
+    .SearchStyle {
+        margin-left: 5rem;
+    }
+}

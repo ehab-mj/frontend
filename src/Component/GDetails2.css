@@ -1,0 +1,106 @@
+.T-Buy .T-BuyClick {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+
+    margin: 0 auto;
+    font-family: 'Bauhaus 93';
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    transition: .3s;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.T-Buy .T-BuyClick:hover {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 8px 8px var(--second);
+    transition: .3s;
+}
+
+.T-Cart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1.3rem
+}
+
+.T-Cart .T-CartClick {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+
+    margin: 0 auto;
+    font-family: 'Bauhaus 93';
+    border-radius: 4px;
+    border: 2px solid var(--Red);
+    background-color: var(--Red);
+    border-radius: 20px;
+    color: #000;
+    transition: .3s;
+
+
+    text-align: center;
+    padding: 20px;
+}
+
+.T-Cart .T-CartClick:hover {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 8px 8px var(--second);
+    transition: .3s;
+}
+
+.T-detailRight {
+    display: flex;
+    background-image: linear-gradient(to center, rgb(0, 0, 0), transparent);
+    flex-direction: column;
+    height: 450px;
+    justify-content: space-between;
+}
+
+.T-detailRightTop>div {
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+
+.T.name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.T-rating {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 70px;
+    padding: .1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: .2rem;
+}

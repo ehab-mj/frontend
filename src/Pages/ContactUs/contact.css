@@ -1,0 +1,90 @@
+.section {
+    position: relative;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    width: auto;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: var(--bgcolor);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+
+}
+
+.section h2 {
+    margin-top: 10px;
+    font-family: 'Bauhaus 93';
+    text-decoration: uppercase;
+    font-size: 3.3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 19px 16px;
+    color: #ffffff;
+}
+
+.section span {
+    font-family: 'Bauhaus 93';
+    text-decoration: uppercase;
+    font-size: 3.3rem;
+    color: var(--second);
+}
+
+.section form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section form .input-box input {
+    width: 50%;
+}
+
+.section form .input-box input,
+.section form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    /* color: var(--text-color);
+    background: var(--Light-bg-color); */
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.section form textarea {
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.section form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    font-family: 'Bauhaus 93';
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #000;
+    transition: .3s;
+
+
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    width: 250px;
+}
+
+.section form .btn:hover {
+    box-shadow: 8px 8px var(--second);
+    transition: .3s;
+}

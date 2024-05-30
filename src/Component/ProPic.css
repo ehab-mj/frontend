@@ -1,0 +1,43 @@
+.img-display-after {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.img-display-before {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.image-upload {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 20px;
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: 'Bauhaus 93';
+    border-radius: 4px;
+    border: 2px solid var(--Red);
+    background-color: var(--Red);
+    border-radius: 20px;
+    transition: .3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-upload:hover {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 8px 8px var(--second);
+    transition: .3s;
+}
