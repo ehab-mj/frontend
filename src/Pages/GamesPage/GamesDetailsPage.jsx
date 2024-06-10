@@ -47,13 +47,13 @@ const GamesDetailsPage = () => {
     };
 
     let liked = false; // Initialize 'liked' as false by default
-    if (GameDetails.likes && GameDetails.likes.find((id) => id === login._id)) {
+    if (GameDetails.likes && GameDetails.likes.find) {
         liked = true;
     }
 
 
     let Carted = false; // Initialize 'liked' as false by default
-    if (GameDetails.Carts && GameDetails.Carts.find((id) => id === login._id)) {
+    if (GameDetails.Carts && GameDetails.Carts.find) {
         Carted = true;
     }
 

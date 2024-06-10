@@ -37,6 +37,7 @@ const GameDetailsComponent = ({
     onEdit,
     onAddToCart,
     onFavorite,
+    userId
 }) => {
     const { login } = useContext(LoginContext);
     const navigate = useNavigate();
@@ -109,6 +110,13 @@ const GameDetailsComponent = ({
     };
 
 
+    let AdminType = false;
+    if (login) {
+        if (login._id === userId || login.isAdmin) {
+            AdminType = true;
+        }
+    }
+
     const handleEditClick = () => {
         onEdit(id);
     };
@@ -178,13 +186,13 @@ const GameDetailsComponent = ({
                         )}
 
                         <Box>
-                            {((login.isBusiness && IsAdmin) ||
+                            {((AdminType) ||
                                 to.pathname === ROUTES.MYGAMES) && (
                                     <IconButton onClick={handleDeleteClick}>
                                         <DeleteIcon color="error" />
                                     </IconButton>
                                 )}
-                            {((login.isBusiness && IsAdmin) ||
+                            {((AdminType) ||
                                 to.pathname === ROUTES.MYGAMES) && (
                                     <IconButton onClick={handleEditClick}>
                                         <ModeIcon color="warning" />
