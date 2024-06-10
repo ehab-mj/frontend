@@ -81,7 +81,8 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/users", normalizeRegister(inputsValue, checked));
+      await axios.post("/users/register", normalizeRegister(inputsValue, checked));
+      console.log(normalizeRegister(inputsValue, checked));
       toast.success("✔ Signned Up Success", {
         position: "top-right",
         autoClose: 1000,
